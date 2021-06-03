@@ -1,0 +1,5 @@
+node initial project create commend: $npm init;
+
+install dependance: $ npm i express --save;
+
+install nodemon: $npm install -g nodemon;

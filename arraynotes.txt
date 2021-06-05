@@ -1,0 +1,201 @@
+ARRAY:
+    The array object used to store multiple values in a single variable
+
+CONCAT:
+    concat method used to join two or more arrays
+    
+    SYNTAX: array = array1.concat(array2,array3,...array(n))
+
+COPYWITHIN:
+    1. The copyWithin() method copies array elements to another position in the array, overwriting the existing values
+    2. This method overwrites the original array
+    
+    SYNTAX: array.copyWithin(target,start,end);
+
+    NOTE:  The copyWithin() method is not supported in IE 11 (and earlier versions).
+
+ENTRIES:
+    1. The entries() method returns an Array Iterator object with key/value pairs.
+
+    SYNTAX: array.entries();
+
+Fill:
+    1. The fill() method fills the specified elements in an array with a static value.
+    2. This method overwrites the original array.
+
+    SYNTAX: array.fill(value, start, end)
+
+FILTER:
+    1. The filter() method creates an array filled with all array elements that pass a test (provided as a function).
+
+    NOTE: 
+        1. filter() does not execute the function for array elements without values.
+        2. filter() does not change the original array.
+
+    SYNTAX: array.filter(ele => condition)
+
+FIND:
+    1. The find() method returns the value of the first element in an array that pass a test (provided as a function).
+
+    NOTE:
+        1. does not execute the function for empty arrays.
+        2. does not change the original array.
+
+    SYNTAX: array.find(ele => condition)
+
+FINDINDEX:
+    1. The findIndex() method returns the index of the first element in an array that pass a test (provided as a function).
+
+    NOTE:
+        1. findIndex() does not execute the function for array elements without values
+        2. findIndex() does not change the original array.
+
+    SYNTAX: array.findIndex(ele => condition);
+
+FOREACH:
+    1. The forEach() method calls a function once for each element in an array, in order.
+    
+    NOTE:
+        1. the function is not executed for array elements without values.
+
+    SYNTAX: array.forEach((ele, index, arr) => console.log())
+
+            ele => Required. The value of the current element
+            index => Optional. The array index of the current element
+            arr => Optional. The array object the current element belongs to
+
+FROM: (DOUBT)
+    1. The Array.from() method returns an Array object from any object with a length property or an iterable object.
+
+    SYNTAX: Array.from(object, mapFunction, thisValue)
+
+            object => Required. The object to convert to an array
+            mapFunction => Optional. A map function to call on each item of the array
+            thisValue => Optional. A value to use as this when executing the mapFunction
+
+INCLUDES:
+    1. The includes() method determines whether an array contains a specified element.
+    2. This method returns true if the array contains the element, and false if not.
+
+    NOTE: The includes() method is case sensitive.
+
+    SYNTAX: array.includes(element, start)
+
+INDEXOF:
+    1. The indexOf() method searches the array for the specified item, and returns its position.
+
+    NOTE: Returns -1 if the item is not found.
+
+    SYNTAX: array.indexOf(item, start)
+
+ISARRAY:
+    1. The isArray() method determines whether an object is an array.
+    2. This function returns true if the object is an array, and false if not.
+
+    SYNTAX: Array.isArray(obj)
+
+JOIN:
+    1. The join() method returns the array as a string.
+    2. The elements will be separated by a specified separator. The default separator is comma (,).
+
+    NOTE:  this method will not change the original array.
+
+    SYNTAX: array.join(); // data1,data2,data3...
+            array.join("-") // data1-data2-data3...
+
+KEYS:
+    1. The keys() method returns an Array Iterator object with the keys of an array.
+
+    NOTE: this method does not change the original array.
+
+    SYNTAX: array.keys();
+
+LENGTH:
+    1. The length property sets or returns the number of elements in an array.
+
+    SYNTAX: array.length
+
+LASTINDEXOF:
+    1. Return last index of array data.
+
+    NOTE: Search data not there in array return -1 No Data Found
+
+    SYNTAX: array.lastIndexOf(item, start)
+
+MAP:
+    1. The map() method creates a new array with the results of calling a function for every array element.
+    2. The map() method calls the provided function once for each element in an array, in order.
+
+    NOTE: 
+        1. map() does not execute the function for array elements without values.
+        2. this method does not change the original array.
+
+    SYNTAX: array.map(ele => condition);
+
+POP:
+    1. The pop() method removes the last element of an array, and returns that element.
+
+    NOTE: 
+        1. This method changes the length of an array.
+        2. To remove the first element of an array, use the shift() method.
+
+    SYNTAX: array.pop();
+
+
+PUSH": 
+    1. The push() method adds new items to the end of an array, and returns the new length
+
+    NOTE:
+        1. The new item(s) will be added at the end of the array.
+        2. This method changes the length of the array.
+        3. To add items at the beginning of an array, use the unshift() method.
+
+    SYNTAX: array.push();
+
+REDUCE:
+    1. The reduce() method reduces the array to a single value.
+    2. The reduce() method executes a provided function for each value of the array (from left-to-right).
+    3. The return value of the function is stored in an accumulator (result/total).
+
+    NOTE: 
+        1. reduce() does not execute the function for array elements without values.
+        2. This method does not change the original array.
+
+        SYNTAX: array.reduce((total, currentValue, currentIndex, arr) => total + currentValue);
+
+REDUCERIGHT:
+    1. The reduceRight() method reduces the array to a single value.
+    2. The reduceRight() method executes a provided function for each value of the array (from right-to-left).
+    3. The return value of the function is stored in an accumulator (result/total).
+
+    NOTE: reduceRight() does not execute the function for array elements without values.
+
+    SYNTAX: array.reduceRigth((total, currentValue, currentIndex, arr) => total - currentValue);
+
+REVERSE:
+    1. The reverse() method reverses the order of the elements in an array.
+
+    NOTE: this method will change the original array.
+
+    SYNTAX: array.reverse();
+
+SHIFT:
+    1. The shift() method removes the first item of an array.
+
+    NOTE: 
+        1. This method changes the length of the array.
+        2. The return value of the shift method is the removed item.
+        3. To remove the last item of an array, use the pop() method.
+        4. this method will change the original array.
+    
+    SYNTAX: array.shift();
+
+SLICE:
+    1. The slice() method returns the selected elements in an array, as a new array object.
+    2. The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+
+    NOTE: The original array will not be changed.
+
+    SYNTAX: array.slice(start, end)
+
+    

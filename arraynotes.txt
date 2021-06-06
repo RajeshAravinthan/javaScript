@@ -198,4 +198,52 @@ SLICE:
 
     SYNTAX: array.slice(start, end)
 
+SOME:
+    1. The some() method checks if any of the elements in an array pass a test (provided as a function).
+    2. The some() method executes the function once for each element present in the array:
+
+        i. If it finds an array element where the function returns a true value, some() returns true (and does not check the remaining values)
+        ii. Otherwise it returns false
+
+    NOTE: some() does not change the original array.
+
+    SYNTAX: array.some(function(currentValue, index, arr), thisValue);
+
+SORT:
+    1. The sort() method sorts the items of an array.
+    2. The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down).
+
+    NOTE: This method changes the original array.
+
+    SYNTAX: array.sort();
+
+SPLICE:
+    1. The splice() method adds/removes items to/from an array, and returns the removed item(s).
+
+    NOTE: This method changes the original array.
+
+    SYNTAX: array.splice(index, howmany_item_remove, item1, ....., itemX);
+
+TOSTRING:
+    1. The toString() method returns a string with all the array values, separated by commas.
+
+    NOTE: This method will not change the original array.
+
+    SYNTAX: array.toString();
+
+UNSHIFT:
+    1. The unshift() method adds new items to the beginning of an array, and returns the new length.
+
+    NOTE: This method changes the length of an array.
+
+    SYNTAX: array.unshift(item1,item2,...);
+
+VALUEOF:
+    1. The valueOf() method returns the array.
+    2. This method is the default method of the array object. Array.valueOf() will return the same as Array
+
+    NOTE: This method will not change the original array.
+
+    SYNTAX: array.valueOf();
+
     

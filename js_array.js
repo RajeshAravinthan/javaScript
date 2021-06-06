@@ -122,7 +122,40 @@ fruits.shift() //AFFECT ORIGINAL ARRAY
 // console.log(fruits)
 
 /*****************************slice****************************/
-console.log(fruits);
+// console.log(fruits);
 let slice = fruits.slice(2, 4); // NOT AFFECT ORIGINAL ARRAY 
 //1 - start with 1 // 4 strat with 1
-console.log(slice);
+// console.log(slice);
+
+/*********************some************************************/
+// console.log(arrFilter)
+let some = arrFilter.some(ele => ele > 23); //NOT AFFECT ORIGINAL ARRAY
+// console.log(some)
+
+/*************************sort*********************************/
+// console.log(fruits);
+// fruits = ['Banana', 'Orange', 'Apple', 'Mango', 'Banana']
+// let sort = fruits.sort(); //string only => ascending order 
+let sort = fruits.reverse(); //string only => descending order => not working
+// let sort = arrFilter.sort(); // ascending order
+// let sort = arrFilter.sort((a, b) => a - b); // ascending order
+// let sort = arrFilter.sort((a, b) => b - a); // descending order
+// console.log(sort)
+
+/*********************************splice**************************/
+let splice = ["Banana", "Orange", "Apple", "Mango"];
+splice.splice(2, 0, "aaaaa"); // affect original arrays
+// console.log(splice)
+
+/****************************toString***************************/
+let tostring = splice.toString(); //not affect in array
+// console.log(tostring)
+
+/********************************unshift**********************/
+let unshift = ["Banana", "Orange", "Apple", "Mango"];
+unshift.unshift("aaaa", "bbbbb"); // affect original array
+// console.log(unshift)
+
+/****************************valueOf****************************/
+let valueof = unshift.valueOf(); //not affect original array
+// console.log(valueof)

@@ -1,0 +1,7 @@
+
+CHARAT:
+    1. The charAt() method returns the character at the specified index in a string.
+
+    NOTE: The index of the last character in a string is string.length-1, the second last character is string.length-2, and so on (See "More Examples").
+
+    SYNTAX: string.charAt(index);
